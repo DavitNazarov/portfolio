@@ -1,0 +1,128 @@
+.banner{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.banner_welcome{
+    text-align: start;
+    margin: 80px;
+    
+    div{
+        font-size:calc(42px - 4px);
+        font-family: 'Sora', sans-serif;
+        line-height: 56px; /* 116.667% */
+        letter-spacing: -0.96px;
+    }
+    p{
+        font-size: calc(15px - 1px);
+        font-family: 'Sora', sans-serif;  
+        color: #71717A;
+        font-weight: 400;
+    }
+    
+}
+.banner_image{
+    img{
+        width:calc(100% - 20px);
+        padding-right: 74px;
+
+    }
+}
+.banner_span_1{
+    font-weight: 400;
+}
+.banner_span_2{
+    font-weight: 800;
+}  
+      .banner_span_3{
+              a {
+                --fill-color: #000;
+                position: relative;
+                padding: 4px 0;
+               font-size: calc(30px - 10px);
+                text-decoration: none;
+                text-transform: uppercase;
+                -webkit-text-stroke: 2px var(--fill-color);
+                font: 700 2rem Raleway, sans-serif;
+                color: transparent;
+                background-clip: text;
+                transition: 0.5s linear;
+                z-index: -1;
+              }
+            }
+        
+.banner_icon{
+svg{
+    margin: 20px;
+}
+}
+
+
+.links_icon_conteiner{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    svg{
+        fill: #000;
+    }
+    svg:hover{
+        cursor: pointer;
+    }
+ 
+}
+.links_icon{
+    padding:12px;
+    border:4px solid #000;
+    border-radius: 10px;
+    user-select: none;
+}
+.links_icon:hover{
+    background-color: #000;
+
+    transform: translateY(-3px);
+    transition: 0.5s;
+    svg{
+        fill: white;
+    }
+}
+
+
+
+
+@media only  screen and (max-width:375px) {
+    .banner_welcome{
+        padding-top: 40px;
+        margin: 0;
+        div{
+            font-size: 25px;
+        }
+        p{
+            padding-top: 50px;
+            font-size: 16px;
+            margin: 10px;
+        }
+    }
+    .banner_span_3{
+        a{
+            font-size: 28px;
+        }
+    }
+   }
+ 
+@media only screen and (max-width:668px) {
+    .banner_welcome{
+        margin: 10px;
+    }
+}
+     
+
+@media only screen and (max-width:1200px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+}      
+       
+

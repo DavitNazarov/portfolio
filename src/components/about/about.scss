@@ -1,0 +1,25 @@
+.about_me_conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 60px;
+}
+.about_me_image{
+    img{
+        width: 80%;
+    }
+}
+.about_me_text{
+    padding: 20px;
+    text-align: start;
+    max-width: 600px;
+    min-width: 300px;
+    font-size: 15px;
+    font-family: 'Sora', sans-serif;
+}
+@media only screen and (max-width:1200px) {
+    .about_me_conteiner{
+        display: flex;
+        flex-direction: column;
+    }
+}
