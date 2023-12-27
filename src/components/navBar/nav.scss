@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@mixin theme( $Font-stack:'Sora' ,$Nav-color:#000,$Font-weight:600,$line-height: 24px,$font-size: 20px  ){
+    font-family:$Font-stack,sans-serif;
+    color: $Nav-color;
+    font-weight: $Font-weight;
+    line-height: $line-height; 
+    font-size: $font-size;
+    cursor: pointer;
+}
+
+.navbar{
+    position: fixed !important;
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav-item{
+    @include theme()
+}
+.btn{
+    @include theme($Nav-color:#fff)
+}
+
+.burger-menu {
+    height: 100%;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.burger-bar {
+    width: 40px;
+    height:6px;
+    background-color: #000;
+    border-radius: 0.5em;
+    margin-top: 14px;
+}
+
+.menu {
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(241 241 241);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+/* ------------- sliding menu ------------------ */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inherit;
+}
+
+/* ----- animations--------- */
+/* clicked */
+.burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2){
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(135deg) translate(-0.5em, 1em);
+    transition: ease-out 0.5s;
+}
+
+/* unclicked */
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+.burger-menu{
+    display: none;
+}
+.burger_menu_details{
+position: absolute;
+top: 20%;
+ul {
+    li{
+        text-align: start;
+        margin-top: 10px;
+        list-style-type: none;
+        @include theme()
+        
+    }
+}
+}
+@media only screen and (max-width: 748px) {
+    .navbar-expand .navbar-toggler {
+        display: flex !important;
+    }
+    .nav-item{
+        display: none;
+    }
+    .decktop_btn{
+        display: none;
+    }
+    .burger-menu{
+        display: flex;
+    }
+   .decktop_btn{
+    display: none !important;
+   }
+}

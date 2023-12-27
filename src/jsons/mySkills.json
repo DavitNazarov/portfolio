@@ -1,0 +1,40 @@
+[
+    {
+        "name":"HTML",
+        "icon":"FaHtml5"
+    },
+    {
+        "name":"Css",
+        "icon":"FaCss3"
+    },
+    {
+        "name":"Bootstrap",
+        "icon":"FaBootstrap"
+    },
+    {
+        "name":"Sass",
+        "icon":"FaSass"
+    },
+    {
+        "name":"Javascript",
+        "icon":"SiJavascript"
+    },
+    {
+        "name":"React",
+        "icon":"FaReact"
+    },
+    {
+        "name":"Git",
+        "icon":"FaGitAlt"
+    },
+    {
+        "name":"Figma",
+        "icon":"FaFigma"
+    },
+    {
+        "name":"Json",
+        "icon":"LuFileJson2"
+    }
+    
+  
+]
