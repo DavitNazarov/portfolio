@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import Typical from "react-typical";
+import "./experience.css";
 
 function Experience() {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    fetch("/public/json/experiance.json")
+    fetch("/json/experiance.json")
       .then((response) => response.json())
       .then((data) => setSkills(data))
       .catch((error) => console.error("Error fetching JSON:", error));
@@ -13,29 +14,30 @@ function Experience() {
 
   return (
     <section>
-      <div className="flex justify-center">
-        <h1 className="mt-60 text-4xl font-mono text-slate-500">
-          EXPERIENCE WITH:
-        </h1>
-        <h1 className="mt-60 text-4xl font-mono text-slate-500 -z-50 pl-2">
+      <div className="mt-60 exp_with">
+        <h1 className=" text-4xl font-mono text-red-300">EXPERIENCE WITH:</h1>
+        <h1 className=" text-4xl font-mono text-red-400 -z-50 pl-2">
           <Typical
-            loop={10}
-            wrapper="p"
+            loop={Infinity}
             steps={[
               " Html",
-              2000,
+              2500,
               " Css",
-              2000,
+              2500,
               " Scss",
-              2000,
+              2500,
               " JavaScript",
-              2000,
+              2500,
+              " TypeScript",
+              2500,
+              "React",
+              2500,
               " Node",
-              2000,
+              2500,
               " Mongo DB",
-              2000,
+              2500,
               " Express ",
-              2000,
+              2500,
             ]}
           />
         </h1>
@@ -47,7 +49,7 @@ function Experience() {
             <div className="flex justify-center p-9 flex-col items-center hover:border-[1px] transition ease-in-out duration-150 cursor-pointer">
               <img
                 width="130px"
-                src={`/${skill.skill_img}.svg`}
+                src={`/svg/${skill.skill_img}.svg`}
                 alt={skill.skill}
               />
               <p>{skill.skill} </p>

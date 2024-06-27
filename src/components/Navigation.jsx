@@ -4,7 +4,7 @@ function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar  md:flex fixed w-full justify-around p-8 ">
+    <nav className="navbar  md:flex fixed w-full justify-around p-8 z-50 ">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-2xl">MyLogo</div>
 

@@ -1,5 +1,11 @@
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <section>
+      <div>
+        <h1>My Projects: </h1>
+      </div>
+    </section>
+  );
 };
 
 export default Projects;

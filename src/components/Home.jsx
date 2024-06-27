@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="container pt-28 flex flex-col justify-center items-center">
       <div>
-        <img src="/avatar.svg" alt="avatar" />
+        <img src="/svg/avatar.svg" alt="avatar" />
       </div>
       <div>
         <h1 className="text-4xl text-center font-serif font-bold pt-9 -z-50">
