@@ -1,0 +1,40 @@
+
+    [
+    {
+        "skill_img":"html",
+        "skill":"HTML"
+    },
+    {
+        "skill_img":"css",
+        "skill":"CSS"
+    },
+    {
+        "skill_img":"scss",
+        "skill":"SCSS"
+    },
+    {
+        "skill_img":"js",
+        "skill":"JS"
+    },
+    {
+        "skill_img":"react",
+        "skill":"REACT"
+    },
+    {
+        "skill_img":"ts",
+        "skill":"TypeScript "
+    },
+    {
+        "skill_img":"mongodb",
+        "skill":"MONGO DB"
+    },
+    {
+        "skill_img":"nodejs",
+        "skill":"NODE JS"
+    },
+    {
+        "skill_img":"ex",
+        "skill":"Express"
+    }
+    
+]

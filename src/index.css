@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color:  rgb(23 23 23);
+  color: white;
+}
+.navbar{
+  background-color: #222222;
+}
+
+ul, li ,ol{
+  list-style-type: none;
+}
+.exp_skills{
+  display: grid;
+  height: 110%;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1.3fr 1.3fr 1.1fr;
+}
+@media only screen and (max-width:1270px) {
+  .exp_skills{
+      grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+@media only screen and (max-width:970px) {
+  .exp_skills{
+      grid-template-columns: 1fr 1fr  ;
+  }
+}
+@media only screen and (max-width:647px) {
+  .exp_skills{
+      grid-template-columns: 1fr   ;
+  }
+}
