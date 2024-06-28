@@ -29,9 +29,9 @@ function Navigation() {
               <Link
                 to={data.Path}
                 key={data.PageName}
-                className="flex items-center transition-transform transform hover:translate-x-2"
+                className="flex items-center"
               >
-                <li className="hidden nav-item-name mt-[3rem]">
+                <li className="hidden nav-item-name mt-[3rem] transition-transform transform hover:translate-x-2">
                   {data.PageName}
                 </li>
               </Link>
