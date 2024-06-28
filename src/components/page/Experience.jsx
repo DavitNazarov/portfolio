@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Typical from "react-typical";
 import "./experience.css";
 
 function Experience() {
@@ -13,34 +12,10 @@ function Experience() {
   }, []);
 
   return (
-    <section>
-      <div className="mt-60 exp_with">
+    <section className="p-20">
+      <div className="exp_with">
         <h1 className=" text-4xl font-mono text-red-300">EXPERIENCE WITH:</h1>
-        <h1 className=" text-4xl font-mono text-red-400 -z-50 pl-2">
-          <Typical
-            loop={Infinity}
-            steps={[
-              " Html",
-              2500,
-              " Css",
-              2500,
-              " Scss",
-              2500,
-              " JavaScript",
-              2500,
-              " TypeScript",
-              2500,
-              "React",
-              2500,
-              " Node",
-              2500,
-              " Mongo DB",
-              2500,
-              " Express ",
-              2500,
-            ]}
-          />
-        </h1>
+        <h1 className=" text-4xl font-mono text-red-400 -z-50 pl-2">REAct</h1>
       </div>
 
       <div className="exp_skills flex justify-center items-center mt-10 p-14">

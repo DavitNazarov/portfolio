@@ -1,5 +1,3 @@
-import Typical from "react-typical";
-
 const Home = () => {
   return (
     <div className="container pt-28 flex flex-col justify-center items-center">
@@ -8,19 +6,7 @@ const Home = () => {
       </div>
       <div>
         <h1 className="text-4xl text-center font-serif font-bold pt-9 -z-50">
-          <Typical
-            loop={Infinity}
-            steps={[
-              "Hi! 😎",
-              1000,
-              "I am a front-end developer.",
-              1000,
-              "With crazy experiance",
-              1000,
-              "lets start🔝",
-              1000,
-            ]}
-          />
+          me
         </h1>
         <div className="flex content-center">
           <p className="pt-9 text-lg text-center p-9 ">

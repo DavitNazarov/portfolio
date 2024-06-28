@@ -1,17 +1,11 @@
 import Navigation from "@/components/Navigation";
-import Home from "./components/Home";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import ProgresBar from "./anim/ProgresBar";
+import AppRouter from "@/router/AppRouter";
 
 function App() {
   return (
     <>
-      <ProgresBar />
       <Navigation />
-      <Home />
-      <Experience />
-      <Projects />
+      <AppRouter />
     </>
   );
 }
